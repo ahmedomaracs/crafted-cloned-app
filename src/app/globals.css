@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Athar Luxury Design System Tokens */
+  --color-athar-cream: #FAF8F5;
+  --color-athar-sand: #F3EFEA;
+  --color-athar-surface: #FFFFFF;
+  --color-athar-obsidian: #141414;
+  --color-athar-charcoal: #181818;
+  --color-athar-espresso: #2C1A11;
+  --color-athar-gold: #B08D57;
+  --color-athar-gold-light: #F5EFE6;
+  --color-athar-amber: #C89B3C;
+  --color-athar-muted: #6E6A63;
+  --color-athar-subtle: #9A948C;
+  --color-athar-border: #E6E1DA;
+  --color-athar-divider: #EFECE6;
+  --color-athar-border-hover: #C5A059;
+
+  /* Original Capture Tokens */
+  --color-db-crimson: #881140;
+  --color-db-magenta: #c2185b;
+  --color-db-burgundy: #3d0018;
+  --color-db-ink: #222222;
+  --color-db-stone: #878787;
+  --color-db-muted: #7b7b7b;
+  --color-db-graphite: #444444;
+  --color-db-gold: #f0d6a2;
+  --color-db-paper: #f8f8f8;
+  --color-db-lz: #f5f5f5;
+
+  /* Status & Action Tokens */
+  --color-status-success: #10B981;
+  --color-status-warning: #F59E0B;
+  --color-status-danger: #EF4444;
+  --color-status-whatsapp: #25D366;
+  --color-status-sms: #3B82F6;
+
+  /* Font Families */
+  --font-serif: "Libre Baskerville", 'Playfair Display', 'Amiri', Cairo, Georgia, "Times New Roman", serif;
+  --font-sans: Montserrat, Cairo, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+
+  /* Border Radius */
+  --radius-hero: 24px;
+  --radius-card: 16px;
+  --radius-inner: 12px;
+  --radius-pill: 9999px;
+  --radius-icon-btn: 10px;
+
+  /* Shadows */
+  --shadow-card: 0 2px 10px rgba(20, 20, 20, 0.03);
+  --shadow-card-hover: 0 12px 28px rgba(20, 20, 20, 0.08);
+  --shadow-popover: 0 16px 36px rgba(20, 20, 20, 0.14);
+
+  /* Letter Spacing */
+  --tracking-kicker: 0.16em;
+
+  /* Breakpoints */
+  --breakpoint-xs: 375px;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1025px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-2xl: 1360px;
+}
+
+:root {
+  /* Background Colors */
+  --bg-primary: #FAF8F5;
+  --bg-secondary: #F3EFEA;
+  --bg-surface: #FFFFFF;
+  --bg-obsidian: #141414;
+  --bg-espresso: #2C1A11;
+  --bg-glass-badge: rgba(250, 248, 245, 0.92);
+
+  /* Text Colors */
+  --text-primary: #181818;
+  --text-secondary: #6E6A63;
+  --text-muted: #9A948C;
+  --text-inverse: #FAF8F5;
+
+  /* Brand & Accent Colors */
+  --accent-gold: #B08D57;
+  --accent-gold-light: #F5EFE6;
+  --accent-amber: #C89B3C;
+
+  /* Borders & Dividers */
+  --border-card: #E6E1DA;
+  --border-divider: #EFECE6;
+  --border-hover: #C5A059;
+
+  /* Status & Action Colors */
+  --status-success: #10B981;
+  --status-success-bg: #ECFDF5;
+  --status-warning: #F59E0B;
+  --status-warning-bg: #FFFBEB;
+  --status-danger: #EF4444;
+  --status-danger-bg: #FEF2F2;
+  --action-whatsapp: #25D366;
+  --action-sms: #3B82F6;
+
+  /* Typography */
+  --font-serif-en: "Libre Baskerville", 'Playfair Display', Georgia, "Times New Roman", serif;
+  --font-sans-en: Montserrat, Cairo, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-serif-ar: 'Amiri', serif;
+  --font-sans-ar: 'Cairo', sans-serif;
+
+  /* Border Radius */
+  --radius-card: 16px;
+  --radius-image: 12px;
+  --radius-hero: 24px;
+  --radius-pill: 9999px;
+  --radius-icon-btn: 10px;
+
+  /* Shadows */
+  --shadow-card: 0 2px 10px rgba(20, 20, 20, 0.03);
+  --shadow-card-hover: 0 12px 28px rgba(20, 20, 20, 0.08);
+  --shadow-popover: 0 16px 36px rgba(20, 20, 20, 0.14);
+}
+
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-size: 16px;
+  font-family: Montserrat, Cairo, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #f8f8f8;
+  color: #444444;
+  font-size: 14px;
+  font-family: Montserrat, Cairo, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.heading-editorial {
+  font-family: "Libre Baskerville", Cairo, Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: #222222;
+}
+
+.kicker-overline {
+  font-family: Montserrat, Cairo, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #878787;
+}
